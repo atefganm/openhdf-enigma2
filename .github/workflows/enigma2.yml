@@ -1,10 +1,10 @@
-name: Enigma2 CI
+name: enigma2 build
 
 on:
   push:
-    branches: [7.2]
+    branches: [ 7.2 ]
   pull_request:
-    branches: [7.2]
+    branches: [ 7.2 ]
 
 jobs:
   build:
@@ -40,7 +40,7 @@ jobs:
           sudo apt-get install libjpeg-turbo8-dev
           sudo apt-get install libgif-dev
 
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
       - uses: actions/setup-python@v2
         with:
